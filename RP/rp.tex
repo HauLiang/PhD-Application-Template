@@ -1,0 +1,113 @@
+\documentclass{article}
+\usepackage{pgf}
+\usepackage{pgfpages}
+
+\pgfpagesdeclarelayout{boxed}
+{
+	\edef\pgfpageoptionborder{0pt}
+}
+{
+	\pgfpagesphysicalpageoptions
+	{%
+		logical pages=1,%
+	}
+	\pgfpageslogicalpageoptions{1}
+	{
+		border code=\pgfsetlinewidth{2pt}\pgfstroke,%
+		border shrink=\pgfpageoptionborder,%
+		resized width=.95\pgfphysicalwidth,%
+		resized height=.95\pgfphysicalheight,%
+		center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
+	}%
+}
+
+\pgfpagesuselayout{boxed}
+
+\input{structure.tex}
+\title{\Huge \textbf{Research Plan}}  
+
+
+
+
+\author{\emph{Candidate: Hao Liang}}
+\date{\emph{Title: xxx}}
+
+\begin{document}
+	
+	\maketitle 
+	
+	%\section*{Introduction}
+	
+	\section{Introduction}% Unnumbered section
+	\large{
+		
+		Introduce the background \cite{liang2022adaptive, liang2022sparse}...
+		
+	
+	}
+	
+
+	\section{Related Work} % Numbered section
+	
+	\large{
+	Existing methods on xx mainly focus on ...
+	
+	}
+
+
+	\section{Research Objectives}
+	
+	\large{
+		The objectives of this research plan are listed as follows:
+		
+		\begin{itemize}
+			\item[-] Objective 1: ...
+			
+			\item[-] Objective 2: ...
+			
+			\item[-] Objective 3: ...
+		\end{itemize}
+		}
+	
+	\section{Research Methodology}
+	
+	\large{
+		Although the existing approaches are generally efficient, both depend on xxx. Also, most methods rely on the xxx, which may significantly limit their applications. Besides, existing works considered a normal case of xxx, leading to a restriction of xxx. Finally, the assumption that xxx can be alleviated, which may be suitable for wider fields. This research plan is thus aiming to address the issues of existing methods based on xxx, which may be detailed as follows:
+		
+		\begin{itemize}
+			\item[-] Methodology 1: ...
+			
+			
+			\item[-] Methodology 2: ...
+			
+			
+			\item[-] Methodology 3: ...
+			
+			
+			\item[-] Methodology 4: ...
+		\end{itemize}
+	}
+	
+	
+	\section{Candidate Experience}
+	
+	\large{
+		The candidate has received a bachelor's degree majoring in statistics and a bachelor's degree majoring in electronic information engineering, and has expected to receive a master's degree majoring in signal and information processing. During the education experience, the candidate develops a solid mathematics foundation and has a good command of signal processing knowledge. 
+		
+		\newpage
+		During the master's study, the candidate focuses on signal processing and sparse optimization, and has conducted extensive research and published serveral papers as the first author. In the direction of signal decomposition, one conference paper has been published, which was received by \emph{\textbf{IEEE International Conference on Acoustics, Speech and Signal Processing}} (ICASSP, 2022). And one journal paper was received by \emph{\textbf{The Journal of the Acoustical Society of America}} (JASA, 2022; \textbf{IF: 2.482, RANK: Q2}). Also, a journal paper has also been published in the field of array signal processing, which was received by \emph{\textbf{Signal Processing}} (2022; \textbf{IF: 4.729, Rank: Q1}). In addition, one paper is submitted to \emph{\textbf{IEEE Transaction on Signal Processing}} (TSP, 2022; \textbf{IF: 4.875, RANK: Q1}) and now in major revision. These research experience has made the candidate quite \textbf{self-motivated} in doing research and has gained experience and insights in many fields such as \textbf{sparse optimization} and \textbf{Bayesian learning}, which are in line with the proposed research plan.
+		
+		In general, the candidate believes that this research plan can be conducted successfully and make his own contributions with the help of the supervisor.
+	}
+	
+	
+	
+	\
+	\
+
+
+\bibliographystyle{unsrt}
+\bibliography{ref.bib}
+
+
+\end{document}

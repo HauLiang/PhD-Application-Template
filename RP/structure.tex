@@ -1,0 +1,67 @@
+\usepackage{amsmath,amsfonts,stmaryrd,amssymb}
+
+\usepackage{enumerate} 
+
+\usepackage[ruled]{algorithm2e}
+
+\usepackage[framemethod=tikz]{mdframed}
+
+\usepackage{listings} 
+\lstset{
+	basicstyle=\ttfamily,
+}
+
+%	DOCUMENT MARGINs
+
+\usepackage{geometry} 
+
+\geometry{
+	paper=a4paper,
+	top=1.cm,
+	bottom=2cm,
+	left=2.5cm,
+	right=2.5cm,
+	headheight=20pt,
+	footskip=1.5cm,
+	headsep=1.2cm, 
+}
+
+%	FONTS
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc} 
+\usepackage{XCharter} 
+
+\newenvironment{commandline}{
+	\medskip
+	\begin{mdframed}[style=commandline]
+	}{
+	\end{mdframed}
+	\medskip
+}
+
+\newenvironment{file}[1][File]{ 
+	\medskip
+	\newcommand{\mdfilename}{#1}
+	\begin{mdframed}[style=file]
+	}{
+	\end{mdframed}
+	\medskip
+}
+
+
+\newenvironment{warn}[1][Warning:]{
+	\medskip
+	\begin{mdframed}[style=warning]
+		\noindent{\textbf{#1}}
+	}{
+	\end{mdframed}
+}
+
+\newenvironment{info}[1][Info:]{ 
+	\medskip
+	\begin{mdframed}[style=info]
+		\noindent{\textbf{#1}}
+	}{
+	\end{mdframed}
+}
