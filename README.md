@@ -7,7 +7,7 @@ The LaTex template for my PhD application, including CV and RP.
 
 CV Preview
 ----------
-<img src="cv.pdf" style="max-width: 100%">
+<img src="cv_Page1.png" style="max-width: 1%">
 
 RP Preview
 ----------
